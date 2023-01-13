@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    string[] days = (string[])ViewData["days"];
+}
+
+<div class="text-center">
+    <h1 class="display-4" style="color: tomato;">Welcome to </h1>
+    <ul>
+        @foreach (var item in days)
+        {
+            <li>@item</li>
+        }
+    </ul>
+</div>
